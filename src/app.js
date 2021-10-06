@@ -11,11 +11,11 @@ import './styles/styles.scss';
 
 const store = configureStore();
 
-store.subscribe(() => {
-    const state = store.getState();
-    const VisibleExpenses = getVisibleExpenses(state.expenses, state.filters)
-    console.log(VisibleExpenses)
-});
+// store.subscribe(() => {
+//     const state = store.getState();
+//     const VisibleExpenses = getVisibleExpenses(state.expenses, state.filters)
+//     console.log(VisibleExpenses)
+// });
 
 store.dispatch(addExpense({ description: 'Water Bill', amount:4500 }));
 store.dispatch(addExpense({ description: 'Gas Bill', createdAt:1000 }));

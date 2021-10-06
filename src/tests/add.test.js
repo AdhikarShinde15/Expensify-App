@@ -5,7 +5,3 @@ test('should add two numbers',() => {
     expect(result).toBe(7);
 })
 
-test('checks greetins', () => {
-   const greetins = generateGreeting('mike');
-   expect(greetins).toBe('Hello mike!')
-})

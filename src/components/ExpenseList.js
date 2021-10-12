@@ -7,7 +7,7 @@ export const ExpenseList = (props) => (
     <div>
         {
             props.expenses.length === 0 ? (
-              <p>No EXpenses</p>
+              <p>No Eepenses</p>
             ): (
                 React.Children.toArray(
                     props.expenses.map((expense) => (

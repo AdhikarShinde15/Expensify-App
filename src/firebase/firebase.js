@@ -13,8 +13,8 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
-
-export { firebase, database as default };
+const googleAuthProvider = new firebase.auth.GoogleAuthProvider();
+export { firebase, googleAuthProvider,database as default };
 
 // // Child Added
 // database.ref('Expenses').on('child_added', (snapshot) => {
@@ -113,7 +113,7 @@ export { firebase, database as default };
 // })
 
 // database.ref().update({
-//     stressLevel: 9,
+//     stressLevel: 9
 //     'job/company':'Amazon',
 //     'location/city': 'Seattle'
 // })

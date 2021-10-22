@@ -1,29 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Should correctly render ExpenseSummary with 1 expense  1`] = `
-<div>
-  <h1>
-    Viewing 
-    1
-     
-    expense
-     totaling 
-    $2.35
-     
-  </h1>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        1
+      </span>
+       
+      expense
+       totaling 
+      <span>
+        $2.35
+      </span>
+       
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="btn"
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
 
 exports[`Should correctly render ExpenseSummary with multiple expense  1`] = `
-<div>
-  <h1>
-    Viewing 
-    21
-     
-    expenses
-     totaling 
-    $231,244.55
-     
-  </h1>
+<div
+  className="page-header"
+>
+  <div
+    className="content-container"
+  >
+    <h1
+      className="page-header__title"
+    >
+      Viewing 
+      <span>
+        21
+      </span>
+       
+      expenses
+       totaling 
+      <span>
+        $231,244.55
+      </span>
+       
+    </h1>
+    <div
+      className="page-header__actions"
+    >
+      <Link
+        className="btn"
+        to="/create"
+      >
+        Add Expense
+      </Link>
+    </div>
+  </div>
 </div>
 `;
